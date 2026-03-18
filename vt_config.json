@@ -1,0 +1,10 @@
+{
+  "api_keys": [
+      "YOUR_VIRUSTOTAL_API_KEY"
+    ],
+  "timeout": 30,
+  "max_retries": 3,
+  "rate_limit_delay": 1.0,
+  "enable_color": true,
+  "output_dir": "results"
+}

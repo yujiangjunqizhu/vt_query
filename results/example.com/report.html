@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VirusTotal 查询报告（脱敏示例）</title>
+    <style>
+        body {
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+            background: #0f172a;
+            color: #e5e7eb;
+            margin: 0;
+            padding: 24px;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        .card {
+            background: #111827;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+        }
+        h1, h2 { margin-top: 0; }
+        .muted { color: #9ca3af; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 16px;
+        }
+        .stat {
+            background: #1f2937;
+            border-radius: 12px;
+            padding: 16px;
+        }
+        .value {
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+        .good { color: #22c55e; }
+        .warn { color: #f59e0b; }
+        .bar {
+            height: 12px;
+            background: #374151;
+            border-radius: 999px;
+            overflow: hidden;
+            margin-top: 8px;
+        }
+        .bar > div {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #22c55e, #38bdf8);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 10px 8px;
+            border-bottom: 1px solid #374151;
+            vertical-align: top;
+        }
+        td:first-child {
+            width: 180px;
+            color: #9ca3af;
+        }
+        .placeholder {
+            margin-top: 12px;
+            padding: 14px;
+            border: 1px dashed #4b5563;
+            border-radius: 10px;
+            color: #9ca3af;
+        }
+        a { color: #60a5fa; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>VirusTotal 查询报告（脱敏示例）</h1>
+            <p class="muted">该页面用于仓库交付展示，已去除真实截图、真实查询目标和真实运行痕迹。</p>
+        </div>
+
+        <div class="card">
+            <h2>统计概览</h2>
+            <div class="grid">
+                <div class="stat">
+                    <div class="muted">查询目标</div>
+                    <div class="value">example.com</div>
+                </div>
+                <div class="stat">
+                    <div class="muted">查询类型</div>
+                    <div class="value">domain</div>
+                </div>
+                <div class="stat">
+                    <div class="muted">恶意检测数</div>
+                    <div class="value good">0</div>
+                </div>
+                <div class="stat">
+                    <div class="muted">总扫描引擎</div>
+                    <div class="value">88</div>
+                </div>
+            </div>
+            <div style="margin-top:16px;">
+                <div class="muted">检测率：0/88</div>
+                <div class="bar"><div></div></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>详细信息</h2>
+            <table>
+                <tr><td>状态</td><td>查询成功</td></tr>
+                <tr><td>是否恶意</td><td>否</td></tr>
+                <tr><td>是否高危</td><td>否</td></tr>
+                <tr><td>查询时间</td><td>2026-01-01 00:00:00</td></tr>
+                <tr><td>最后分析时间</td><td>2025-12-31 23:50:00</td></tr>
+                <tr><td>威胁分类</td><td>未知</td></tr>
+                <tr><td>标签</td><td>无</td></tr>
+                <tr><td>情报链接</td><td><a href="https://www.virustotal.com/gui/domain/example.com">https://www.virustotal.com/gui/domain/example.com</a></td></tr>
+            </table>
+            <div class="placeholder">
+                未保留截图文件。原始截图和真实结果图片不应进入仓库版本。
+            </div>
+        </div>
+    </div>
+</body>
+</html>

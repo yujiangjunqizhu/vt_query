@@ -1,0 +1,14 @@
+# VirusTotal查询工具依赖
+requests>=2.28.0
+
+# 可选：如需导出Excel格式
+# pandas>=1.5.0
+# openpyxl>=3.0.0
+
+# 可选：如需更丰富的终端输出
+# colorama>=0.4.6
+# rich>=13.0.0
+
+# 网页截图依赖（新增）
+selenium>=4.0.0
+webdriver-manager>=4.0.0
